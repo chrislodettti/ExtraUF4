@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+{% block body %}   
+  <h1>ExtraUF4 </h1>
+  <h2>Employee</h2>
+    {% for employees in employee %}
+        <div>
+            <h3>{{ employees.name}}</h3>
+        <h3>{{ employees.latitude}}</h3>
+        <h3>{{ employees.longitude}}</h3>
+
+
+</div>
+       {% endfor %}
+{% endblock %}
